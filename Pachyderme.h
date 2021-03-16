@@ -30,6 +30,10 @@ public:
   Pachyderme (double = 1000.0);
   virtual ~Pachyderme ();
   
+  // *** Accesseurs ***
+  
+  double reqMasse() const ; 
+  
   // *** Méthodes publiques qu'on voudra tester!!! ***
   
   void doublerLaMasse() ;

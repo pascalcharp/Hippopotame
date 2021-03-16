@@ -22,6 +22,15 @@
 Pachyderme::Pachyderme (double p_masse) : m_masse(p_masse) { }
 
 /**
+ * @brief Accesseur de l'attribut Masse
+ * @return la masse du pachyderme en kg
+ */
+
+double Pachyderme::reqMasse() const {
+  return m_masse ; 
+}
+
+/**
  * @brief Méthode publique qui multiplie la masse par deux.  On voudrait 
  * certainement tester cette méthode.
  */

@@ -54,6 +54,17 @@ TEST(PachydermeDerivee, ConstructeurNoThrow) {
 }
 
 /**
+ * Méthode testée: constructeur
+ * Comportement attendu: le constructeur affecte la valeur appropriée à l'attribut
+ * m_masse.
+ */
+
+TEST(PachydermeDerivee, ConstructeurAffecteMasseOK) {
+  PachydermeDerivee p(666) ; 
+  EXPECT_EQ(666, p.reqMasse()) ; 
+}
+
+/**
  Méthode testée: reqPachydermeFormate
  Comportement attendu: retourne une string contenant le poids correct du pachyderme
  */
